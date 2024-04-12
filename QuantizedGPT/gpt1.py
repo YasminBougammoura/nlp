@@ -22,7 +22,7 @@ print(device)
 
 #torch.manual_seed(1337)
 
-with open('C:\\Users\\Yasmin\\Documents\\DSSC\\Deep Learning\\data\\input.txt','r', encoding = 'utf-8') as f:
+with open('\input.txt','r', encoding = 'utf-8') as f:
     text = f.read()
 
 # here are all the unique characters that occur in this text
@@ -251,7 +251,7 @@ execution_time = end_time - start_time
 
 print("Time : ", execution_time)
 
-with open('C:\\Users\\Yasmin\\Documents\\DSSC\\Deep Learning\\QuantizedGPT\\time.csv', 'a', newline='') as file:
+with open('\time.csv', 'a', newline='') as file:
     writer = csv.writer(file)
     #writer.writerow(['Tempo_di_esecuzione'])
     writer.writerow([execution_time])
@@ -259,4 +259,4 @@ with open('C:\\Users\\Yasmin\\Documents\\DSSC\\Deep Learning\\QuantizedGPT\\time
 # generate from the model
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
 #print(decode(m.generate(context, max_new_tokens=1000)[0].tolist()))
-open('C:\\Users\\Yasmin\\Documents\\DSSC\\Deep Learning\\QuantizedGPT\\text1.txt', 'w').write(decode(m.generate(context, max_new_tokens=1000)[0].tolist()))
+open('\text1.txt', 'w').write(decode(m.generate(context, max_new_tokens=1000)[0].tolist()))
