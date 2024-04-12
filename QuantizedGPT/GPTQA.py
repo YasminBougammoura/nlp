@@ -28,7 +28,7 @@ print(device)
 #loss_train = []
 
 #torch.manual_seed(1337)
-with open('C:\\Users\\Yasmin\\Documents\\DSSC\\Deep Learning\\data\\input.txt','r', encoding = 'utf-8') as f:
+with open('\input.txt','r', encoding = 'utf-8') as f:
     text = f.read()
 
 # here are all the unique characters that occur in this text
@@ -304,16 +304,16 @@ end_time = time.time()
 execution_time = end_time - start_time
 print(execution_time)
 
-with open('C:\\Users\\Yasmin\\Documents\\DSSC\\Deep Learning\\QuantizedGPT\\timeqa.csv', 'a', newline='') as file:
+with open('\timeqa.csv', 'a', newline='') as file:
     writer = csv.writer(file)
     #writer.writerow(['Tempo_di_esecuzione'])
     writer.writerow([execution_time])
 
-with open('C:\\Users\\Yasmin\\Documents\\DSSC\\Deep Learning\\QuantizedGPT\\lossesqa.csv', 'a', newline='') as file_loss:
+with open('\lossesqa.csv', 'a', newline='') as file_loss:
     writer = csv.writer(file_loss)
     #writer.writerow(['Tempo_di_esecuzione'])
     writer.writerow([loss])
 '''
 context = torch.zeros((1, 1), dtype=torch.long, device=device)
 #print(decode(q.generate(context, max_new_tokens=500)[0].tolist()))
-open('C:\\Users\\Yasmin\\Documents\\DSSC\\Deep Learning\\QuantizedGPT\\textqa.txt', 'w').write(decode(q.generate(context, max_new_tokens=1000)[0].tolist()))
+open('\textqa.txt', 'w').write(decode(q.generate(context, max_new_tokens=1000)[0].tolist()))
