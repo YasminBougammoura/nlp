@@ -1,3 +1,4 @@
-# Bigram Language Model
+# Natural Language Processing
 
-All BigramModel*.ipynb files were created as an exercise to create small language models. Code is taken from tutorials at https://github.com/karpathy/nn-zero-to-hero/tree/master/lectures/makemore created by Andrej Karpathy.
+FolderS Exercise and BigramModel contains some coding exercises in order to implement small language models and they are executed following Andrey Karpathy's tutorial at https://www.youtube.com/@AndrejKarpathy/playlists. 
+Folder QuantizedGPT contains python scripts for implementing a small bit quantization language model using as benchmark the not quantized one constructed by Karpathy's lectures on Youtube.
