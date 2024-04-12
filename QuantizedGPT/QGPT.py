@@ -25,7 +25,7 @@ print(device)
 loss_val = []
 loss_train = []
 
-with open('C:\\Users\\Yasmin\\Documents\\DSSC\\Deep Learning\\data\\input.txt','r', encoding = 'utf-8') as f:
+with open('\input.txt','r', encoding = 'utf-8') as f:
     text = f.read()
 
 # here are all the unique characters that occur in this text
